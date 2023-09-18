@@ -1,0 +1,385 @@
+#root {
+
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+
+body{
+background: rgb(230,230,230);
+background: linear-gradient(80deg, rgba(230,230,230,1) 0%, rgba(170,199,216,1) 35%, rgba(68,87,109,1) 100%);
+
+}
+
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+#mainContent{
+  box-shadow: 10px 5px 5px #44576d;
+border-radius: 5px;
+}
+.nameHeader{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#userData{
+  border-radius: 20px;
+}
+.welcome{
+  font-size: 20px;
+  font-weight: 500;
+}
+#homeTop, #aboutTop{
+  font-size: 20px;
+}
+
+#homeTop:hover, #aboutTop:hover{
+color: #dfebf6;
+}
+.img-portrait1{
+  border-radius: 20%;
+  box-shadow: 1px 1px 1px 2px  black;
+  margin-top: 20px;
+  height: 220px;
+}
+.weather-icon{
+
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10px;
+ display: block;
+ 
+}
+.inputWeather{
+  
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row ;
+  
+
+}
+.locationInput{
+
+border: solid 2px black;
+margin-top: 40px;
+height: 44px;
+display: flex;
+padding-left: 10px;
+margin: 10px;
+border-radius: 20px;
+
+
+}
+.weatherSearchBtn{
+ height: 44px;
+ width: 44px;
+ border: solid  black 1px;
+ border-radius: 30%;
+ background: url(/public/language-images/se.png);
+ background-size: cover;
+}
+
+
+.question{
+  color: white;
+  font-weight: bolder;
+}
+
+.weatherDataContent{
+  background-color: #aac7d8;
+  gap: 20px;
+  margin-left:100px;
+  border: solid 2px;
+  border-color: #dfebf6;
+  height: 500px;
+  width: 370px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-container{
+  width:  500px;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+.aboutMeContainer{
+
+  height: 600px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+  
+
+  
+}
+.left-container-Abtme{
+
+
+ background: rgb(230,230,230);
+ background: linear-gradient(5deg, rgba(230,230,230,1) 0%, rgba(170,199,216,1) 35%, rgba(68,87,109,1) 100%);
+ margin-top: 20px;
+ width: 100%;
+ height: 240px;
+ flex-direction: column;
+ box-shadow: 10px 5px 5px #44576d;
+ border-radius: 5px;
+
+}
+.right-container-Abtme{
+  
+ 
+  width: 100%;
+  height: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  padding-top: 5px;
+  gap: 30px;  
+  
+
+}
+
+.right-container-Abtme img{
+  
+  
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;  
+  border-radius: 20px;
+  
+
+}
+
+
+.img-portrait1:hover , .html-logo:hover,  .css-logo:hover, .JS-logo:hover, .SQL-logo:hover, .React-logo:hover, .git-logo:hover{
+transform: scale(1.1);
+transition: 0.2s linear;
+
+}
+.html-logo:hover,  .css-logo:hover, .JS-logo:hover, .SQL-logo:hover, .React-logo:hover, .git-logo:hover{
+  box-shadow: 0px 5px 10px 1px rgba(170,199,216,1);
+
+}
+
+#aboutBtn, #openResumeBtn{
+  background-color: #29353c;
+  color: white;
+}
+
+#aboutBtn:hover{
+  box-shadow: 1px 1px 1px 1px #44576d;
+  background-color: #aac7d8;
+  color: black;
+}
+.aboutSubtitle{
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 30px;
+}
+.myDescription{
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#openResumeBtn:hover{
+  box-shadow: 1px 1px 1px 1px #44576d;
+  background-color: #aac7d8;
+  color: black;
+}
+
+
+.containerResume{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main{
+  transition: filter 0ms ease-in-out 300ms;
+}
+
+
+.popup{
+  position: absolute;
+  top: -100%;
+  left: 35%;
+  transform: (-50%, -50%);
+  width: 450px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: -25px;
+  transition:top 0ms ease-in-out 0ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+}
+
+.popup .closeResume{
+  position: absolute;
+  top:-3px;
+  right:-2px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  cursor: pointer;
+  background: #eee;
+}
+
+body.active-popup{
+  overflow: hidden;
+}
+body.active-popup .main{
+  filter: blur(3px);
+  background: rgba(0, 0, 0, 0.08);
+  transition: filter 0ms ease-in-out 0ms;
+}
+body.active-popup .popup{
+  top:30%;
+  opacity: 1;
+  margin-top: 0px;
+  transition:top 0ms ease-in-out 0ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+  background-color: #44576d;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1060px){
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    width: 100%;
+  }
+  nav h1{
+    color: white;
+    font-size: 20px; ;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    
+  }
+
+.main{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+
+
+}
+.content #myInfo{
+  width:100%;
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+
+ #mainContent{
+  
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 auto;
+  align-items: center;
+
+ }
+
+  .weatherDataContent{
+
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    height: 420px;
+  }
+
+  .img-portrait1{
+width: 160px;
+height: 160px;
+  }
+
+
+  .aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .left-container-Abtme {
+    display: block;
+    height: 100%;
+    padding-bottom: 15px;
+    }
+
+
+ .left-container-Abtme h2{
+  display: block;
+  font-size: 30px;
+  }
+  .left-container-Abtme p{
+  display: block;
+  font-size: 15px;
+  }
+
+  .right-container-Abtme{
+    width: 100%;
+    height: 100%;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .right-container-Abtme img{
+    height: 80px;
+    width: 80px;
+    margin-top: 6px;
+  
+  }
+
+}
+
+
+
+
